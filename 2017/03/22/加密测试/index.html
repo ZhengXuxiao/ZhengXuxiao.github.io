@@ -5,16 +5,16 @@
   
   <title>加密测试 | hello-zxx</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一段用于加密测试的语句">
+  <meta name="description" content="function doDecrypt(pwd) {	console.log(&quot;in doDecrypt&quot;);	var txt = document.getElementById(&quot;enc_content&quot;).innerHTML;	var bytes  = CryptoJS.AES.decrypt(txt, pwd);	var plaintext = bytes.toString(CryptoJS.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="加密测试">
 <meta property="og:url" content="http://yoursite.com/2017/03/22/加密测试/index.html">
 <meta property="og:site_name" content="hello-zxx">
-<meta property="og:description" content="这是一段用于加密测试的语句">
-<meta property="og:updated_time" content="2017-03-22T02:47:28.041Z">
+<meta property="og:description" content="function doDecrypt(pwd) {	console.log(&quot;in doDecrypt&quot;);	var txt = document.getElementById(&quot;enc_content&quot;).innerHTML;	var bytes  = CryptoJS.AES.decrypt(txt, pwd);	var plaintext = bytes.toString(CryptoJS.">
+<meta property="og:updated_time" content="2017-03-22T04:02:37.305Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="加密测试">
-<meta name="twitter:description" content="这是一段用于加密测试的语句">
+<meta name="twitter:description" content="function doDecrypt(pwd) {	console.log(&quot;in doDecrypt&quot;);	var txt = document.getElementById(&quot;enc_content&quot;).innerHTML;	var bytes  = CryptoJS.AES.decrypt(txt, pwd);	var plaintext = bytes.toString(CryptoJS.">
   
     <link rel="alternate" href="/atom.xml" title="hello-zxx" type="application/atom+xml">
   
@@ -85,12 +85,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是一段用于加密测试的语句</p>
-
+        <script src="/js/crypto-js.js"></script><script>function doDecrypt(pwd) {	console.log("in doDecrypt");	var txt = document.getElementById("enc_content").innerHTML;	var bytes  = CryptoJS.AES.decrypt(txt, pwd);	var plaintext = bytes.toString(CryptoJS.enc.Utf8);	document.getElementById("enc_content").innerHTML = plaintext;	document.getElementById("enc_content").style.display = "block";   document.getElementById("enc_passwd").style.display = "none";}</script><div id="enc_content" style="display:none">U2FsdGVkX18xjZiMkJKI6XWrmsrfjHd0uoOrwPhuJXuPbWVYsIPeJuKB8t40D5cL7dLoedCeHJC2QgFzN5Db9kNE5LEtuBojPRWrmLIxvHYOmwebZMuipmUtMWQrmPwcpMnxzksBeJDvmt55Y+Qfu5DnFL8G1roW7idodmeyuBTN7rVxHfNo+EGr+4ZKlwSYOdhb9RssDzF8RAMzBp4JNBXCgUKbZcnZc59jQy3qJPCooxSuRoOa5ZoPJM/4NqBCZPDjhyIgOBPe0zXvufwzOaZgbxIt9pEpNMXnfufG1lNpHuX4B5WzH9sTDiQtFQKAlyGJfLxfQui8v8w+hpNVDSkbGYszQUWsaaty1o8gMxXHC42jntrWFKB7O84kV5FG</div><div id="enc_passwd"> <input type="text" style=" border-radius: 5px; border-style: groove; height: 30px; width: 50%; cursor: auto; font-size: 102%; color: currentColor; outline: none; text-overflow: initial; padding-left: 5px;"> <input type="submit" value="decrypt" onclick="decrypt()" style=" width: 58px; height: 34px; border-radius: 5px; background-color: white; border-style: solid; color: currentColor; "> <script> function decrypt() { var passwd = $("#enc_passwd input")[0].value; console.log(passwd); doDecrypt(passwd); } </script></div>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/22/加密测试/" data-id="cj0kdb6710001mogk0qo7z4ab" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/22/加密测试/" data-id="cj0kdzvxe0000uwgkw61fd3v5" class="article-share-link">Share</a>
       
       
     </footer>

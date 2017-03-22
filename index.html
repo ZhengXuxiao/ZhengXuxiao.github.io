@@ -83,12 +83,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是一段用于加密测试的语句</p>
-
+        <script src="/js/crypto-js.js"></script><script>function doDecrypt(pwd) {	console.log("in doDecrypt");	var txt = document.getElementById("enc_content").innerHTML;	var bytes  = CryptoJS.AES.decrypt(txt, pwd);	var plaintext = bytes.toString(CryptoJS.enc.Utf8);	document.getElementById("enc_content").innerHTML = plaintext;	document.getElementById("enc_content").style.display = "block";   document.getElementById("enc_passwd").style.display = "none";}</script><div id="enc_content" style="display:none">U2FsdGVkX18xjZiMkJKI6XWrmsrfjHd0uoOrwPhuJXuPbWVYsIPeJuKB8t40D5cL7dLoedCeHJC2QgFzN5Db9kNE5LEtuBojPRWrmLIxvHYOmwebZMuipmUtMWQrmPwcpMnxzksBeJDvmt55Y+Qfu5DnFL8G1roW7idodmeyuBTN7rVxHfNo+EGr+4ZKlwSYOdhb9RssDzF8RAMzBp4JNBXCgUKbZcnZc59jQy3qJPCooxSuRoOa5ZoPJM/4NqBCZPDjhyIgOBPe0zXvufwzOaZgbxIt9pEpNMXnfufG1lNpHuX4B5WzH9sTDiQtFQKAlyGJfLxfQui8v8w+hpNVDSkbGYszQUWsaaty1o8gMxXHC42jntrWFKB7O84kV5FG</div><div id="enc_passwd"> <input type="text" style=" border-radius: 5px; border-style: groove; height: 30px; width: 50%; cursor: auto; font-size: 102%; color: currentColor; outline: none; text-overflow: initial; padding-left: 5px;"> <input type="submit" value="decrypt" onclick="decrypt()" style=" width: 58px; height: 34px; border-radius: 5px; background-color: white; border-style: solid; color: currentColor; "> <script> function decrypt() { var passwd = $("#enc_passwd input")[0].value; console.log(passwd); doDecrypt(passwd); } </script></div>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/22/加密测试/" data-id="cj0kdb6710001mogk0qo7z4ab" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/22/加密测试/" data-id="cj0kdzvxe0000uwgkw61fd3v5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +132,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/21/hello-world/" data-id="cj0kdb66g0000mogkvbdfds0x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/21/hello-world/" data-id="cj0kdzvxi0001uwgkd3p4bpwv" class="article-share-link">Share</a>
       
       
     </footer>
